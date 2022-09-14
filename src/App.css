@@ -1,38 +1,155 @@
-.App {
+.main{
+  background-image: url("./images/background_login4.png");
+  background-size: 100% 100%;
+  width: 100vw;
+  height:100vh;
+}
+
+.second_container{    
+    border-radius: 30px;
+    width:75vw;
+    height: 100vh;
+}
+
+.login{
+  min-width:35vw;
+  height:85vh;
+  background-color:white;
+  border-radius: 0px 30px 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.loginImg{
+  background-image: url("./images/logininner4.png");
+  background-size: 100% 100%;
+  min-width:40vw;
+  height:85vh;
+  border-radius: 30px 0px 0px 30px; 
+}
+
+.logo{ 
+  width:35vw;
+  height:5vh;  
+  margin:3vh;
+}
+
+.daj{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dajt{
+  display: flex;
+  align-items: center;
+  justify-content:  space-around;
+}
+
+#logoBox{
+  font-size: 4vw;
+  font-family:   Script MT;
+  width:auto;
+  height:auto;
+  background-color: #3b75e0;
+  color: white;
+  box-shadow : 8px 8px 15px #3b75e0;
+  border-radius:20px;
+  text-align:center;
+}
+
+.loginWith{
+  border:1px solid black;
+  border-radius: 30px;
+  width:auto;
+  padding:1vw;
+  cursor: pointer;
+  text-align: center;
+  font-size:1vw;
+}
+.loginWith:hover{
+    box-shadow: 10px 10px 10px grey;
+}
+
+.or{
+  color:black;
+  width: 12vw;
+  margin-top:5vh;
+}
+
+.hrLine{
+  width: 30vw;
+  height: 1vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.credentialsMain{
+  margin-bottom:0vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.credentials{
+  width: 35vw;
+  /* height: 10vh; */
+  padding-bottom: 6vh;
+  margin:10px;
+}
+
+
+input{
+  border:0px solid white;
+  border-bottom: 2px solid #3b75e0;
+  margin-left: 2em;
+  width:20vw;
+  outline:0;
+  background:transparent;
+}
+
+#submit{
+  width:auto;
+  height:auto;
+  background-color: orange;
+  color:white;  
+  border-radius: 10px;
+  border:0px;
+  font-size-adjust: 0.99;
+  cursor:pointer;
+  padding: 10px 40px;
+  font-size: 1vw;
+}
+#submit:hover{
+  box-shadow: 4px 4px 20px black;;
+}
+
+.required:after{
+  content: " *";
+  color: red;
+}
+
+fieldset{
+  border:none;
+}
+
+@media only screen and (max-width:600px) {
+  .second_container{
+    flex-wrap:wrap;
+  }
+  .login{
+    width: 20em;
+    border-radius: 0px 0px 30px 30px;
+  }
+  .loginImg{
+    width: 20em;
+    border-radius: 30px 30px 0px 0px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width:400px) {
+  .login{
+    display:table-row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
